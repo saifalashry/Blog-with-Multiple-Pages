@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>My Blog</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Latest Posts</h2>
+        <input type="text" id="search" placeholder="Search posts..." oninput="filterPosts()">
+
+        <div class="post" data-title="First Post">
+            <h3><a href="post1.html">First Post</a></h3>
+            <p class="summary">This is a summary of the first post. <span class="read-more">Read more...</span></p>
+            <div class="full-content hidden">
+                <p>This is the full content of the first post.</p>
+            </div>
+        </div>
+
+        <div class="post" data-title="Second Post">
+            <h3><a href="post2.html">Second Post</a></h3>
+            <p class="summary">This is a summary of the second post. <span class="read-more">Read more...</span></p>
+            <div class="full-content hidden">
+                <p>This is the full content of the second post.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Blog</p>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
